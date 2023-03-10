@@ -3,8 +3,7 @@
 }
 
 .header__content {
-    max-width: 1000px;
-    margin: 0 auto;
+    @include max-width;
     position: relative;
     display: flex;
     justify-content: space-between;
