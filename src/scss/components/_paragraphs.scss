@@ -1,0 +1,22 @@
+.paragraph {
+    display: inline-block;
+    line-height: 1.5;
+}
+
+.paragraph--new {
+    padding: 0.1em 0.6em;
+    background: $very-dark-blue;
+    font-family: $font-family-2;
+    border-radius: 25px;
+    font-weight: 700;
+    color: $light-grayish-blue;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.paragraph-f-letters {
+    font-size: 0.9em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
