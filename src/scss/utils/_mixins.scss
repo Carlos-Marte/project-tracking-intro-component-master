@@ -1,0 +1,4 @@
+@mixin set-op-pe ($opacity: 1, $pointer-event: auto) {
+    opacity: $opacity;
+    pointer-events: $pointer-event;
+}
