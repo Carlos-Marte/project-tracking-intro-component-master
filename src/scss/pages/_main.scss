@@ -1,4 +1,65 @@
 body {
     font-family: $font-family;
     font-size: $font-size;
+    color: $dark-grayish-blue;
+}
+
+.main__content {
+    @include max-width;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
+
+.hero {
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    position: absolute;
+    transform: translate(2%);
+}
+
+.shape {
+    width: 40%;
+    min-height: 50vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 0 0 0 50px;
+    background: $light-grayish-blue;
+}
+
+.main__texts {
+    padding: 0 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.main__container {
+    display: flex;
+    // flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    gap: 1em;
+}
+
+.main__container--f-column {
+    flex-direction: column;
+    align-items: unset;
+}
+
+@media only screen and (min-width: 530px) {
+    .hero {
+        height: 50vh;
+    }
 }
